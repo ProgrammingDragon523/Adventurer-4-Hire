@@ -8,9 +8,9 @@ flask = "==1.1.2"
 flask-session = "==0.4.0"
 itsdangerous = "==2.0.1"
 gunicorn = "==19.0.0"
-setuptools = "==82.0.1"
+setuptools = "<82.0.0"
 
 [dev-packages]
 
 [requires]
-python_version = "3.14"
+python_version = "3.13.13"
