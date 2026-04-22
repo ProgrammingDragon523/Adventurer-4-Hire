@@ -1,1 +1,1 @@
-web: gunicorn adventure-for-hire
+web: gunicorn app:main
