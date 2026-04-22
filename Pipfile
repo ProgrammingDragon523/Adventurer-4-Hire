@@ -9,6 +9,7 @@ flask-session = "==0.4.0"
 itsdangerous = "==2.0.1"
 gunicorn = "==19.0.0"
 setuptools = "<82.0.0"
+legacy-cgi = "==2.6.4"
 
 [dev-packages]
 
