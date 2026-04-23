@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, redirect, render_template, request, session
 
 app = Flask(__name__,template_folder='templates', static_folder='static')
 
@@ -8,4 +8,4 @@ def index():
 
 @app.route("/the-programming-dragon")
 def programming_dragon():
-    return "<p>Hello, World 2!</p>"
+    return render_template("welcome.html")
