@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template, request, session
+from flask import Flask, redirect, render_template
 
 app = Flask(__name__,template_folder='templates', static_folder='static')
 
