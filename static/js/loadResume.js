@@ -15,11 +15,11 @@ function getExperience(firstProJob){
         yearsExp = currentYear - firstJobYears
     }   
     else if(firstJobMonthNum < currentMonth){
-        yearsExp = currentYear - firstJobYears - 1
+        yearsExp = currentYear - firstJobYears
         monthExp = currentMonth - firstJobMonthNum
     }
     else{
-        yearsExp = currentYear - firstJobYears
+        yearsExp = currentYear - firstJobYears - 1
         monthExp = currentMonth
     }
     return {

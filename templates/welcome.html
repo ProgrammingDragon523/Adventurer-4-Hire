@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
 {% block main %}
 <h1>Welcome to the Programming Dragon</h1>
+<img src="{{ url_for('static', filename='images/Tavern.png') }}"/>
 
-<h2>As you enter the old tavern, the smell of roasted meat and ale hits your nose. Tempted as you are, you are not here
+<h2 id="introText">As you enter the old tavern, the smell of roasted meat and ale hits your nose. Tempted as you are, you are not here
 	for the libations this time.
 	The maid behind the bar spots you and beckons.</h2>
 <br />
@@ -11,11 +12,13 @@
 </div>
 <br />
 <p id="barkeepSpeech">Come in come in, make yourself at home... </p>
+<img src="{{ url_for('static', filename='images/MedievalMaiden.png') }}"/>
 <button id="continue" onclick="changeText()">Continue</button>
 <script>
 	let continued = 0
 	function changeText() {
 		if (continued === 0) {
+			document.getElementById("introText").hidden="hidden"
 			document.getElementById("barkeepSpeech").innerText = "What can I get you? Water? Tea? Ale? Hmm?";
 			continued++;
 		}
