@@ -1,8 +1,32 @@
 {% extends "layout.html" %}
-{% block y %}		
-	
-	<h1>Welcome to the Programming Dragon Tavern</h1>
-	<p>So you are looking for an developer eh? Got a couple of them here... </p>
-	<p>Both have unique sets of skills and experiences. </p>
-	<p>Let me know which you want to learn more about. </p>
+{% block main %}
+<h1>Welcome to the Programming Dragon</h1>
+
+<h2>As you enter the old tavern, the smell of roasted meat and ale hits your nose. Tempted as you are, you are not here
+	for the libations this time.
+	The maid behind the bar spots you and beckons.</h2>
+<br />
+<div id="idCards" hidden>
+	{% include 'partials/intro_card.html'%}
+</div>
+<br />
+<p id="barkeepSpeech">Come in come in, make yourself at home... </p>
+<button id="continue" onclick="changeText()">Continue</button>
+<script>
+	let continued = 0
+	function changeText() {
+		if (continued === 0) {
+			document.getElementById("barkeepSpeech").innerText = "What can I get you? Water? Tea? Ale? Hmm?";
+			continued++;
+		}
+		else if (continued === 1) {
+			document.getElementById("barkeepSpeech").innerText = "Oh! You are looking for SOMEONE not something. Need a job doin’ eh?";
+			continued++;
+		} else {
+			document.getElementById("barkeepSpeech").innerText = "Well, you’ve come to the right Tavern. Here are our resident “for-hires”. Feel free to speak with them.";
+			document.getElementById("continue").hidden = "hidden"
+			document.getElementById("idCards").removeAttribute("hidden");
+		}
+	}
+</script>
 {% endblock %}

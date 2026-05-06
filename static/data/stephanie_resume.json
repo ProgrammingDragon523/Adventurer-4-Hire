@@ -1,0 +1,316 @@
+{
+    "personal_info": {
+        "name": {
+            "first": "Stephanie",
+            "middle": "Marie",
+            "last": "Vaccaro"
+        },
+        "address": {
+            "street": "7703 Mobile Avenue",
+            "city": "Burbank",
+            "state": "Illinois",
+            "zip": "60459",
+            "country": "United States"
+        },
+        "phone_numbers": {
+            "home": "(708)-598-8652",
+            "cell": "(708)-420-3804"
+        },
+        "email": "stephanie.vaccaro523@gmail.com",
+        "dnd_title": "The Code Tinker",
+        "job_style": "Full Stack Developer"
+    },
+    "education": {
+        "school": "Illinois Institute of Technology",
+        "degrees": [
+            {
+                "degree": "Bachelor of Science in Computer Science",
+                "grad_year": "May 2019",
+                "honors": "Cum Laude"
+            },
+            {
+                "degree": "Master of Science in Computer Science",
+                "grad_year": "May 2019"
+            }
+        ],
+        "organizations": [
+            {
+                "org_name": "ACM-W (Association of Computing Machinery-Women’s Chapter)",
+                "titles": [
+                    {
+                        "title": "Founding Member",
+                        "start": "August 2017",
+                        "end": "May 2019"
+                    },
+                    {
+                        "title": "Vice President",
+                        "start": "August 2017",
+                        "end": "January 2018"
+                    },
+                    {
+                        "title": "Scholar",
+                        "start": "August 2018",
+                        "end": "May 2019"
+                    }
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "first_professional_job_start": "October 2019",
+        "jobs": [
+            {
+                "company_name": "Cisco Meraki",
+                "title": "Software Engineer ~ Full Stack",
+                "location": "Chicago, Illinois (Remote)",
+                "started": "May 2022",
+                "ended": "",
+                "current": true,
+                "technical_env": [
+                    "SQL",
+                    "Ruby on Rails",
+                    "JavaScript",
+                    "TypeScript",
+                    "React",
+                    "VSCode",
+                    "Cursor",
+                    "Windows 11",
+                    "Putty",
+                    "PuTTYGen",
+                    "Pagent",
+                    "Gitlab",
+                    "Gerrit",
+                    "Git",
+                    "Postman",
+                    "GoLang",
+                    "Jira",
+                    "Confluence"
+                ],
+                "overview": "Develop, upgrade, and maintain various features utilized by MSPs and other large customers with a varying degree of scalability concerns. Worked on performance and authorization-related projects, considered high-profile must-haves for customers. Assisted in supporting Ruby and Microapp code bases through bug fixes and retrofits.",
+                "highlights": [
+                    "Assisted in Beta launching and bug fixing the Global Overview Project",
+                    "Assisted in performance analysis and helped implement a full-stack streaming solution for the Global Overview",
+                    "Worked on POC API endpoint for Global Search implementation",
+                    "Worked alongside other teams to push RBAC implementation into beta within a deadline.",
+                    "Worked on cross-team collaborations on various features and fixes for large customers.",
+                    "Previously on rotation as a little medic for the dashboard",
+                    "On rotation as deploy responder for the dashboard"
+                ]
+            },
+            {
+                "company_name": "Northwestern University",
+                "title": "IT Associate Developer",
+                "location": "Evanston, Illinois (Remote)",
+                "started": "November 2020",
+                "ended": "May 2022",
+                "current": false,
+                "technical_env": [
+                    "SQL",
+                    "SQR",
+                    "Jira",
+                    "Footprints",
+                    "Phire",
+                    "Notepad++",
+                    "PeopleCode",
+                    "JavaScript",
+                    "Windows 10",
+                    "Application Designer/Developer (PeopleTools)",
+                    "SQL Developer",
+                    "JMeter"
+                ],
+                "overview": "Develop, update, code, and administer the CAESAR student system used by the university’s faculty, administrators, and student body. Accountable for the performance and reliability of this PeopleSoft/ Oracle-based system, along with retrofits, upgrades, and other special projects.",
+                "highlights": [
+                    "Core participant in the Timekeeping Transition Project, partnering with the HR team to convert a legacy timekeeping system to new software, including data migration via SQR",
+                    "Assisted supervisor in planning and implementing a major upgrade to the student system in conjunction with security, database, development, and functional analysis teams;",
+                    "Member of a three-person developer team that used complex JMeter script modifications to conduct load testing of new system upgrades."
+                ]
+            },
+            {
+                "company_name": "Accenture",
+                "title": "Technology Architecture Delivery Analyst",
+                "location": "Chicago, Illinois",
+                "started": "October 2019",
+                "ended": "November 2020",
+                "current": false,
+                "technical_env": [
+                    "Jira",
+                    "Azure",
+                    "Windows 8/10",
+                    "Notepad++",
+                    "Visual Studio",
+                    "VSCode",
+                    "JavaScript",
+                    "TypeScript",
+                    "C#",
+                    "SQL",
+                    "Ionic",
+                    "Flutter"
+                ],
+                "overview": "Member of the Liquid Studios Team, developing a platform-agnostic application framework for mobile development while supporting the CIO with various programming-related tasks.",
+                "highlights": [
+                    "Significantly accelerated the project from concept in Ionic to a 2.0 version using Flutter.",
+                    "Co-developed two versions of a chatbot application framework."
+                ]
+            },
+            {
+                "company_name": "Illinois Institute of Technology",
+                "title": "Project Researcher: Public Safety Radio",
+                "location": "Chicago, Illinois",
+                "started": "May 2017",
+                "ended": "May 2019",
+                "current": false,
+                "technical_env": [
+                    "Python",
+                    "SWI-Prolog",
+                    "Windows 8",
+                    "Notepad++",
+                    "LucidChart"
+                ],
+                "overview": "Participated in the development of a program to analyze data concerning local events and optimize public safety communications by predicting which radio channel frequencies would be most utilized.",
+                "highlights": [
+                    "Co-authored “Semantic Models for Labeling Spectrum Data” (SEDSEAL 2018) and “Spectrum Analysis Using Semantic Models for Context” (CROWNCOM 2019)."
+                ]
+            },
+            {
+                "company_name": "Moraine Valley Community College",
+                "title": "GenCyber Security Camp Instructor",
+                "location": "Palos Hills, Illinois",
+                "started": "August 2017",
+                "ended": "August 2017",
+                "current": false,
+                "technical_env": [
+                    "Scratch"
+                ],
+                "overview": "Taught Scratch and Sphero programming to young students and co-led various learning activities during a week long camp.",
+                "highlights": []
+            },
+            {
+                "company_name": "Museum of Science and Industry",
+                "title": "Fall Intern",
+                "location": "Chicago, Illinois",
+                "started": "October 2016",
+                "ended": "November 2016",
+                "current": false,
+                "technical_env": [],
+                "overview": "Conducted science demonstrations on sound, magnetism, Newton’s laws of motion, and other topics.",
+                "highlights": []
+            },
+            {
+                "company_name": "Illinois Institute of Technology",
+                "title": "Teaching Assistant",
+                "location": "Chicago, Illinois",
+                "started": "August 2015",
+                "ended": "May 2019",
+                "current": false,
+                "technical_env": [
+                    "Java",
+                    "Systems Programming",
+                    "Computer Organization & Assembly Language"
+                ],
+                "overview": "Aided in preparing lessons/learning materials and grading assignments for Java I & II, Systems Programming, and Computer Organization & Assembly Language,",
+                "highlights": []
+            },
+            {
+                "company_name": "Illinois Institute of Technology",
+                "title": "ACM-W Scholar",
+                "location": "Chicago, Illinois",
+                "started": "August 2018",
+                "ended": "May 2019",
+                "current": false,
+                "technical_env": [],
+                "overview": "Held office hours to assist undergraduate and graduate students in achieving goals for subject proficiency, assignment completion, and exam preparation",
+                "highlights": []
+            },
+            {
+                "company_name": "Illinois Institute of Technology",
+                "title": "WINCOM Airplane Project Intern",
+                "location": "Chicago, Illinois",
+                "started": "May 2015",
+                "ended": "August 2015",
+                "current": false,
+                "technical_env": [
+                    "Netlogo",
+                    "Java"
+                ],
+                "overview": "Developed a simulation to demonstrate aircraft flight patterns compared to cell tower locations in a defined radius from the data collection point,",
+                "highlights": []
+            }
+        ]
+    },
+    "publications": [
+        {
+            "title": "Semantic Models for Labeling Spectrum Data",
+            "publication_date": "May 25,2018",
+            "contributors": [
+                "Vaishali Nagpure",
+                "Cynthia Hood"
+            ],
+            "description": "Participated in the development of a program to analyze data concerning local events and optimize public safety communications by predicting which radio channel frequencies would be most utilized. This was used in this publication.",
+            "links": [
+                "https://dl.ifip.org/IFIP-AICT-520/hal-01821315"
+            ]
+        },
+        {
+            "title": "Spectrum Analysis Using Semantic Models for Context",
+            "publication_date": "August 12,2019",
+            "contributors": [
+                "Vaishali Nagpure",
+                "Cynthia Hood"
+            ],
+            "description": "Participated in the development of a program to analyze data concerning local events and optimize public safety communications by predicting which radio channel frequencies would be most utilized. This was used in this publication.",
+            "links": [
+                "https://link.springer.com/book/10.1007/978-3-030-25748-4"
+            ]
+        },
+        {
+            "title": "The Lucky Penny",
+            "publication_date": "April 3, 2024",
+            "contributors": [
+                "Louise Allen"
+            ],
+            "description": "A self published post-apocalyptic novel.\\nPenny never thought she’d have family. Penny lost family when Penny little. Penny scared when taken away from home. Penny stay quiet. Penny lost, Penny found. Now Penny have new family. Penny brave. Penny tell her story.\\nJulietta Milard’s life had been rather mundane up until a few years ago when she found herself in the small town of Waterwealt. Though she had intended to move on to bigger and better things, a beautiful museum preserved in time had her sprouting roots rather than traversing the Wastes further.\\nHaving helped the sleepy town with its various mechanical-based problems, Julietta thought found herself in a smooth routine. That was until the universe decided to throw a curveball her way when about two cycles later a small girl shows up at her doorstep, sick, injured, and unable to speak with only a penny necklace as any identification.\\nNearly a cycle and a half later, the young girl, whom Julietta named Penny, has recovered but remains mute despite her best efforts. On top of taking care of little Penny, restoring the museum, and trying to find a solution for the now increasingly weakening water pressure in town, Julietta is faced with another issue. A stranger has come to town, a ‘doctor’ named Charles Hawthorne, who seems to think the Arcane is real. Brushing him off, she finds herself questioning what the world is coming to. That is until the world as she knows it to come crashing down around her and vanishes in a cloud of dust.",
+            "links": [
+                "https://www.amazon.com/Lucky-Penny-Stephanie-Vaccaro/dp/B0D186MM18",
+                "https://www.goodreads.com/book/show/210845409-the-lucky-penny"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Proof of Concept Machine Learning Data Retrieval System",
+            "contributors": [
+                "Louise Allen"
+            ],
+            "start": "August 2021",
+            "end": "July 2022",
+            "description": "Designed and programmed a machine learning based data retrieval system using SWI-Prolog as a proof of concept based on a fictional program called D3B.dsk from a YouTube mystery series called Project 863.\\nAs an experiment, I attempted to recreate a more simplistic version of D3b.dsk using a 1987 open-source machine learning-style programming language known as Swi-Prolog. Using this language, I have developed a program called ST3PH.dsk.\\nOriginally, I spent a couple of weeks researching and programming to create standalone runnable programs for Windows and Linux. I eventually rewrote the entire thing in Python and deployed it on Heroku.Its base functionality allowed the user to navigate \"directories\" and enter an event name, year, month & year, full date, or up to two key terms for cross-referencing to retrieve events on the timeline created for the show in those directories. It has three knowledge bases that can be individually or all searched at once. The CSVs (standalone) and Database (web app) for these were  updated as more information from the show is released.\\nIt was decommissioned when the series ended, but its code remains available on GitHub (Web App) and MediaFire (Standalone)",
+            "links": [
+                "https://github.com/ProgrammingDragon523/st3ph.dsk",
+                "https://www.mediafire.com/file/1yzkyiyse139f3n/ST3PH_WIN.zip/file",
+                "https://www.mediafire.com/file/wj0dtmq4iaxdsnl/ST3PH_LINUX.zip/file",
+                "https://www.mediafire.com/file/t5ql3fc81vqe6j5/Knowledge_Bases.zip/file"
+            ]
+        },
+        {
+            "title": "Minecraft: Java Edition Custom Maps (Video Games)",
+            "contributors": [],
+            "start": "March 2016",
+            "end": "September 2018",
+            "description": "I am a self taught Minecraft Map maker. I use Minecraft as a game engine to create small video games.\\nSolveIT Series - Singleplayer Adventure\\nThis is a detective style series of maps. The player take on the role of 'Rookie' as they solve case after case, all ending with notes from a friend raising concerns about SolveIT Inc. Each case has a custom story and custom puzzles to solve.\\nS.I. Files Series - Singleplayer Adventure\\nThis is the sequel to SolveIT. The player solves 'cases' that are spread out into 2 or 3 maps. This series currently has 5 maps.\\nThe Tester - Singleplayer Adventure\\nIt is the year 3000. A lot has changed in the world, particularly in the realm of Virtual Reality.\\nYou are invited by one of the original testers of the VR system to learn about it. Simply referred to as\\nThe Tester, you join them as they recount how they tested the system...and the various things that ensued. \\nMastering the Mind- Singleplayer Puzzle\\nSolve 6 different types of puzzles based on Emotions, Memory, Imagination, Perspective, Coordination, and Logic in order to reach the control center of your brain and Master the Mind!\\nChaos's Box - Singleplayer or 2 Player Adventure\\nAfter years of research and searching you have found it, the infamous Chaos's box.\\nYou and your co-worker are more than eager to open the box, yet your other co-worker George is more wary...the story can't be true.\\nWhat could possibly go wrong opening a box?\\nSecureNET: The Grey Hat Origins - Singleplayer Adventure",
+            "links": [
+                "https://www.minecraftmaps.com/search?q=CompSciGirl523",
+                "https://www.youtube.com/@CompSciGirl523/playlists"
+            ]
+        },
+        {
+            "title": "SecureNET the Grey Hat Origins - Cyber Security Educational Game in Minecraft",
+            "contributors": [],
+            "start": "January 2018",
+            "end": "April 2018",
+            "description": "For my cyber security course I created a cyber-security educational game in Minecraft for my semester long project. I applied the concept of gamification in order to teach the basics of cyber security. In addition to the game I create an anonymous online survey that players could fill out to help gauge player learning. I then ran analysis on the survey data and determined the gamification to be a success. ",
+            "links": [
+                "https://www.minecraftmaps.com/adventure-maps/securenet-the-grey-hat-origins"
+            ]
+        }
+    ]
+}
