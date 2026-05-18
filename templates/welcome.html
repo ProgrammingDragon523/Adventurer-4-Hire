@@ -2,6 +2,7 @@
 {% block main %}
 <h1>Welcome to the Programming Dragon</h1>
 <img src="{{ url_for('static', filename='images/Tavern.png') }}"/>
+<script type="text/javascript" src="../../static/js/introButton.js"></script>
 
 <h2 id="introText">As you enter the old tavern, the smell of roasted meat and ale hits your nose. Tempted as you are, you are not here
 	for the libations this time.
@@ -14,22 +15,4 @@
 <p id="barkeepSpeech">Come in come in, make yourself at home... </p>
 <img src="{{ url_for('static', filename='images/MedievalMaiden.png') }}"/>
 <button id="continue" onclick="changeText()">Continue</button>
-<script>
-	let continued = 0
-	function changeText() {
-		if (continued === 0) {
-			document.getElementById("introText").hidden="hidden"
-			document.getElementById("barkeepSpeech").innerText = "What can I get you? Water? Tea? Ale? Hmm?";
-			continued++;
-		}
-		else if (continued === 1) {
-			document.getElementById("barkeepSpeech").innerText = "Oh! You are looking for SOMEONE not something. Need a job doin’ eh?";
-			continued++;
-		} else {
-			document.getElementById("barkeepSpeech").innerText = "Well, you’ve come to the right Tavern. Here are our resident “for-hires”. Feel free to speak with them.";
-			document.getElementById("continue").hidden = "hidden"
-			document.getElementById("idCards").removeAttribute("hidden");
-		}
-	}
-</script>
 {% endblock %}
