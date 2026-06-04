@@ -1,4 +1,4 @@
-<script type="module" src="../../static/js/loadResume.js"></script>
+<script type="module" src="../../static/js/loadingJson/loadBasicFacts.js"></script>
 <div>
 	<div>
 		<h2 id="stephanieName">Name 1</h2>
@@ -7,9 +7,12 @@
 		<p id="stephanieFactOne">Fact 1</p>
 		<p id="stephanieFactTwo">Fact 2</p>
 		<p id="stephanieFactThree">Fact 3</p>
-		<button id="approachStephanie" onclick="changeText()"></button>
+		<a href="{{ url_for('adventurerOverview', adventurer='stephanie') }}" class="btn btn-primary">
+			Approach Stephanie
+		</a>
+
 	</div>
-	<div>
+	<!-- <div>
 		<h2 id="louiseName">Name 1</h2>
 		<h3 id="louiseTitle">Title</h3>
 		<img id="louiseImg"></img>
@@ -17,5 +20,5 @@
 		<p id="louiseFactTwo">Fact 2</p>
 		<p id="louiseFactThree">Fact 3</p>
 		<button id="approachLouise" onclick="changeText()"></button>
-	</div>
+	</div> -->
 </div>

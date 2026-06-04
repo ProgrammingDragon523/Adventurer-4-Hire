@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block main %}
+
+<script type='text/javascript' src="{{ url_for('static', filename='../../static/js/functionality/adventurerButton.js')}}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        loadInitialText("{{adventurer}}");
+    });
+</script>
+
+<h2 id="introText">Intro Text Here</h2>
+<div id="exploreButtons" hidden>
+    <a href="{{ url_for('pastAdventures', adventurer='stephanie') }}" class="btn btn-primary">
+		Past Adventures (Job History)
+	</a>
+    </br>
+    <a href="{{ url_for('credentials', adventurer='stephanie') }}" class="btn btn-primary">
+		Credentials (Education)
+	</a>
+    </br>
+    <a href="{{ url_for('sideQuests', adventurer='stephanie') }}" class="btn btn-primary">
+		Side Quests (Personal Projects)
+	</a>
+    </br>
+    <a href="{{ url_for('skillsAndPowers', adventurer='stephanie') }}" class="btn btn-primary">
+		Skills & Powers (Skills)
+	</a>
+    </br>
+    <a href="{{ url_for('spellScrolls', adventurer='stephanie') }}" class="btn btn-primary">
+		Spell Scrolls (Publications)
+	</a>
+</div>
+</br>
+<p id="adventurerSpeech">Adventurer Speaks Here</p>
+<img src="{{ url_for('static', filename='images/Stephanie.jpg') }}"/>
+<button id="continueAdventurerSpeech" onclick="changeText()">Continue</button>
+<a href="{{ url_for('adventurerOverview', adventurer='stephanie') }}" class="btn btn-primary">
+    Scry Deeper (Download Resume)
+</a>
+</br>
+<a href="{{ url_for('castSendingStone', adventurer='stephanie') }}" class="btn btn-primary">
+    Cast Sending Stone (Send a Message)
+</a>
+</br>
+<a href="{{ url_for('tavern') }}" class="btn btn-primary">
+    Return to Main Tavern
+</a>
+{% endblock %}
