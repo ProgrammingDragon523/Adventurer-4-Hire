@@ -7,21 +7,21 @@
         },
         "address": {
             "street": "47 Ulyett Place",
-            "district": "Old Brook",
+            "district": "Oldbrook",
             "city": "Milton Keynes",
             "zip": "MK6 2NZ",
             "country": "United Kingdom"
         },
         "phone_numbers": {
-            "home": "<FILL IN>",
-            "cell": "<FILL IN>"
+            "home": "07794549682",
+            "cell": "07794549682"
         },
         "email": "louise.allen81@gmail.com",
         "dnd_title": "The Frontend Wizard",
-        "job_style": "Fullstack Developer"
+        "job_style": "Fullstack Website Developer"
     },
     "education": {
-        "school": "Illinois Institute of Technology",
+        "school": "It Career Switch/CodeCademy",
         "degrees": [
             {
                 "degree": "Bachelor of Science in Computer Science",
