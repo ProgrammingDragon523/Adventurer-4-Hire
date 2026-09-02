@@ -1,4 +1,21 @@
 {% extends "layout.html" %}
 {% block main %}
-<h1>HELLO: {{adventurer}}</h1>
+    
+    {% include 'partials/side_nav.html'%}
+
+    <!-- Job Page -->
+    <h1 id="jobTitle">Job Title</h1>
+    <h1 id="company">Company Name</h1>
+    <h2 id="dates">Start-End</h2>
+    <h2 id="years">Years</h2>
+    <h2>Skills</h2>
+    <ul id="skills"></ul>
+    <h2 id="description">Description</h2>
+    <h2>Highlights</h2>
+    <ul id="highlights"></ul>
+    <button id="PageBackward" onclick="pageFlip(-1)">ARROW BACKWARD</button>
+    <button id="PageForward" onclick="pageFlip(1)">ARROW FORWARD</button>
+   
+
+    <script type='module' src="{{ url_for('static', filename='../../static/js/functionality/bookButtons.js')}}"></script>
 {% endblock %}

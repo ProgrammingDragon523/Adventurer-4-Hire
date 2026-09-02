@@ -32,6 +32,7 @@
 </div>
 </br>
 
+<!--Adventurer Speech Bubble-->
 {% if adventurer == "stephanie-vaccaro" %}
 <img src="{{ url_for('static', filename='images/Stephanie.jpg') }}"/>
 {% endif %}
@@ -42,6 +43,7 @@
 <p id="adventurerSpeech">Adventurer Speaks Here</p>
 <button id="continueAdventurerSpeech" onclick="changeText()">Continue</button>
 
+<!--Adventurer Download File, Send Email, and Return to Tavern Links-->
 <a href="{{ url_for('adventurerOverview', adventurer=adventurer) }}" class="btn btn-primary">
     Scry Deeper (Download Resume)
 </a>
