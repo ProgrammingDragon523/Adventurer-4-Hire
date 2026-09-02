@@ -1,4 +1,5 @@
 import stephanieData from "../../data/stephanie_resume.json" with { type: "json" };
+import louiseData from "../../data/louise_resume.json" with { type: "json" };
 
 function getExperience(firstProJob){
     const firstJobMonthString = firstProJob.split(" ")[0]
@@ -55,3 +56,4 @@ function loadResumeData(data){
 }
 
 loadResumeData(stephanieData)
+loadResumeData(louiseData)

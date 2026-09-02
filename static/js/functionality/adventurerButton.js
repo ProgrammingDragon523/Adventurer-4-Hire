@@ -1,7 +1,10 @@
 let step = 0
 
 function loadInitialText(adventurer){
-    visited = "visited" in sessionStorage ? sessionStorage.getItem("visited") : []
+    visited = []
+    if(sessionStorage.getItem("visited") !== null){
+        visited = JSON.parse(sessionStorage.getItem("visited"))
+    }
     console.log(`SessionStorage: ${visited}`)
 
     if (visited.includes(adventurer)){
@@ -13,12 +16,13 @@ function loadInitialText(adventurer){
     else if (adventurer === "stephanie"){
         visited.push(adventurer)
         console.log(`You've visited: ${visited}`)
-        sessionStorage.setItem("visited", visited);
+        sessionStorage.setItem("visited", JSON.stringify(visited));
         document.getElementById("introText").innerText = "You approach the young woman seated at a corner table, papers scattered in front of her.  A plate of brownie crumbs beside her, a small glass with little milk left in, and a small mechanical dragon perched on her shoulder are her companions as she continues to ponder her work. Sensing your presence she greets you."
         document.getElementById("adventurerSpeech").innerText = "Well met, traveler. By your presence, I assume you need a developer?"
     } else {
-        updatedVisited = visited.push(adventurer)
-        sessionStorage.setItem("visited", updatedVisited);
+        visited.push(adventurer)
+        console.log(`You've visited: ${visited}`)
+        sessionStorage.setItem("visited", JSON.stringify(visited));
         document.getElementById("introText").innerText = "Louise's Intro Here"
         document.getElementById("adventurerSpeech").innerText = "Louise's Text Here"
     }

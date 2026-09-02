@@ -31,17 +31,27 @@
 	</a>
 </div>
 </br>
-<p id="adventurerSpeech">Adventurer Speaks Here</p>
+
+{% if adventurer == "stephanie" %}
 <img src="{{ url_for('static', filename='images/Stephanie.jpg') }}"/>
+{% endif %}
+{% if adventurer == "louise" %}
+<img src="{{ url_for('static', filename='images/Louise.jpg') }}"/>
+{% endif %}
+
+<p id="adventurerSpeech">Adventurer Speaks Here</p>
 <button id="continueAdventurerSpeech" onclick="changeText()">Continue</button>
+
 <a href="{{ url_for('adventurerOverview', adventurer='stephanie') }}" class="btn btn-primary">
     Scry Deeper (Download Resume)
 </a>
 </br>
+
 <a href="{{ url_for('castSendingStone', adventurer='stephanie') }}" class="btn btn-primary">
     Cast Sending Stone (Send a Message)
 </a>
 </br>
+
 <a href="{{ url_for('tavern') }}" class="btn btn-primary">
     Return to Main Tavern
 </a>

@@ -1,7 +1,6 @@
 {% extends "layout.html" %}
 {% block main %}
 <h1>Welcome to the Programming Dragon</h1>
-<img src="{{ url_for('static', filename='images/Tavern.png') }}"/>
 <script type="text/javascript" src="../../static/js/functionality/introButton.js"></script>
 
 <h2 id="introText">As you enter the old tavern, the smell of roasted meat and ale hits your nose. Tempted as you are, you are not here
@@ -13,6 +12,6 @@
 </div>
 <br />
 <p id="barkeepSpeech">Come in come in, make yourself at home... </p>
-<img src="{{ url_for('static', filename='images/MedievalMaiden.png') }}"/>
+<img class="circular_image" src="{{ url_for('static', filename='images/MedievalMaiden.png') }}"/>
 <button id="continue" onclick="changeText()">Continue</button>
 {% endblock %}

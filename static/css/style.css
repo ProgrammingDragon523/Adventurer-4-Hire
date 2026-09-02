@@ -25,5 +25,19 @@ p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
 
 body {
   background-color: black; /* Or use #000000 */
+  background-image: url('../images/Tavern.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;            /* Or use #ffffff */
+}
+
+.circular_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+}
+.circular_image img{
+  width:100%;
 }

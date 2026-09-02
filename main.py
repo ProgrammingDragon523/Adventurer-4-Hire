@@ -21,8 +21,7 @@ def tavern():
 # Adventurer Pages
 @app.route("/the-programming-dragon/tavern/<adventurer>")
 def adventurerOverview(adventurer):
-    adventurerToShow = adventurer
-    return render_template("adventurer_overview.html",adventurer = adventurerToShow)
+    return render_template("adventurer_overview.html",adventurer = adventurer)
 
 @app.route("/the-programming-dragon/tavern/<adventurer>/past-adventures")
 def pastAdventures(adventurer):
