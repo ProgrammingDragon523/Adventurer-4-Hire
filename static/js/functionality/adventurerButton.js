@@ -13,7 +13,7 @@ function loadInitialText(adventurer){
         document.getElementById("continueAdventurerSpeech").hidden = "hidden"
         document.getElementById("exploreButtons").removeAttribute("hidden");
     }
-    else if (adventurer === "stephanie"){
+    else if (adventurer === "stephanie-vaccaro"){
         visited.push(adventurer)
         console.log(`You've visited: ${visited}`)
         sessionStorage.setItem("visited", JSON.stringify(visited));

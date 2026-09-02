@@ -1,11 +1,10 @@
 {% extends "layout.html" %}
 {% block main %}
 <h1>Welcome to the Programming Dragon</h1>
-<img src="{{ url_for('static', filename='images/Tavern.png') }}"/>
 <div id="idCards">
 	{% include 'partials/intro_card.html'%}
 </div>
 <br />
-<p id="barkeepSpeech">Tavern is always open.</p>
+<p id="barkeepSpeech">Here are our resident “for-hires”. Feel free to speak with them.</p>
 <img src="{{ url_for('static', filename='images/MedievalMaiden.png') }}"/>
 {% endblock %}

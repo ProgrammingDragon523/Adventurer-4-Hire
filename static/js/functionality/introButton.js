@@ -10,8 +10,6 @@ function changeText() {
         document.getElementById("barkeepSpeech").innerText = "Oh! You are looking for SOMEONE not something. Need a job doin’ eh?";
         step++;
     } else {
-        document.getElementById("barkeepSpeech").innerText = "Well, you’ve come to the right Tavern. Here are our resident “for-hires”. Feel free to speak with them.";
-        document.getElementById("continue").hidden = "hidden"
-        document.getElementById("idCards").removeAttribute("hidden");
+        window.location.href="tavern"
     }
 }
