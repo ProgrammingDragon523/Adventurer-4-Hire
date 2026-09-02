@@ -2,7 +2,7 @@ let step = 0
 
 function changeText() {
     if (step === 0) {
-        document.getElementById("introText").hidden="hidden"
+        document.getElementById("Narrator").hidden="hidden"
         document.getElementById("barkeepSpeech").innerText = "What can I get you? Water? Tea? Ale? Hmm?";
         step++;
     }

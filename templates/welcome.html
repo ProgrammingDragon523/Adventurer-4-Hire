@@ -1,14 +1,28 @@
 {% extends "layout.html" %}
 {% block main %}
-<h1>Welcome to the Programming Dragon</h1>
 <script type="text/javascript" src="../../static/js/functionality/introButton.js"></script>
 
-<h2 id="introText">As you enter the old tavern, the smell of roasted meat and ale hits your nose. Tempted as you are, you are not here
-	for the libations this time.
-	The maid behind the bar spots you and beckons.</h2>
-<br />
-<br />
-<p id="barkeepSpeech">Come in come in, make yourself at home... </p>
-<img class="circular_image" src="{{ url_for('static', filename='images/MedievalMaiden.png') }}"/>
-<button id="continue" onclick="changeText()">Continue</button>
+<!-- PAGE CONTENT: page content starts here, goes to the end -->
+<h1>Welcome to the Programming Dragon</h1>
+
+<!-- TAVERN FULL AREA: container of all things tavern, including the barkeep -->
+<div id="tavernArea">
+	<h2 class="Narrator">As you enter the old tavern, the smell of roasted meat and ale hits your nose. Tempted as you are, you are not here for the libations this time. The maid behind the bar spots you and beckons.</h2>
+	<br /><br />
+
+	<!-- BARKEEP AREA: barkeep actions within the tavern -->
+	<div id="barkeepArea">
+		<div class="barkeepFrame">
+			<img class="circular_image" src="{{ url_for('static', filename='images/MedievalMaiden.png') }}" alt="Barkeep Portrait"/>
+		</div>
+		
+		<div class="barkeepSpeechBox">
+			<p class="barkeepSpeech">Come in, come in, make yourself at home...</p>
+			<button class="continueBtn" onclick="changeText()">
+				Continue <span class="btnArror">→</span>
+			</button>
+		</div>
+		
+	</div>
+</div>
 {% endblock %}
