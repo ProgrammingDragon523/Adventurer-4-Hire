@@ -44,17 +44,5 @@
 <button id="continueAdventurerSpeech" onclick="changeText()">Continue</button>
 
 <!--Adventurer Download File, Send Email, and Return to Tavern Links-->
-<a href="{{ url_for('adventurerOverview', adventurer=adventurer) }}" class="btn btn-primary">
-    Scry Deeper (Download Resume)
-</a>
-</br>
-
-<a href="{{ url_for('castSendingStone', adventurer=adventurer) }}" class="btn btn-primary">
-    Cast Sending Stone (Send a Message)
-</a>
-</br>
-
-<a href="{{ url_for('tavern') }}" class="btn btn-primary">
-    Return to Main Tavern
-</a>
+{% include 'partials/adventurer_footer.html'%}
 {% endblock %}

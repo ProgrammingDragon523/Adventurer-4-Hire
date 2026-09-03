@@ -33,7 +33,7 @@ def skillsAndPowers(adventurer):
 
 @app.route("/the-programming-dragon/tavern/<adventurer>/credentials")
 def credentials(adventurer):
-    return render_template("credentials.html")
+    return render_template("credentials.html",adventurer=adventurer)
 
 @app.route("/the-programming-dragon/tavern/<adventurer>/spell-scrolls")
 def spellScrolls(adventurer):

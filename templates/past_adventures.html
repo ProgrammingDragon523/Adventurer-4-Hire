@@ -8,14 +8,20 @@
     <h1 id="company">Company Name</h1>
     <h2 id="dates">Start-End</h2>
     <h2 id="years">Years</h2>
-    <h2>Skills</h2>
-    <ul id="skills"></ul>
+    <div id="technical_enviroment">
+        <h2>Technical Environment</h2>
+        <ul id="skills"></ul>
+    </div>
     <h2 id="description">Description</h2>
-    <h2>Highlights</h2>
-    <ul id="highlights"></ul>
-    <button id="PageBackward" onclick="pageFlip(-1)">ARROW BACKWARD</button>
-    <button id="PageForward" onclick="pageFlip(1)">ARROW FORWARD</button>
-   
-
+    <div id="highlights_container">
+        <h2>Highlights</h2>
+        <ul id="highlights"></ul>
+    </div>
+    <div id="pageButtons">
+        <button id="PageBackward" onclick="pageFlip(-1)" hidden>ARROW BACKWARD</button>
+        <button id="PageForward" onclick="pageFlip(1)">ARROW FORWARD</button>
+    </div>
+    
+   {% include 'partials/adventurer_footer.html'%}
     <script type='module' src="{{ url_for('static', filename='../../static/js/functionality/bookButtons.js')}}"></script>
 {% endblock %}
