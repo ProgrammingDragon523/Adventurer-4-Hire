@@ -1,0 +1,26 @@
+<div id="barkeepArea">
+    {% if adventurer == "barkeep" %}
+    <div class="barkeepFrame">
+        <img class="circular_image" src="{{ url_for('static', filename='images/MedievalMaiden.png') }}"
+            alt="Barkeep Portrait" />
+    </div>
+    {% endif %}
+    {% if adventurer == "stephanie-vaccaro" %}
+    <div class="barkeepFrame">
+        <img src="{{ url_for('static', filename='images/Stephanie.jpg') }}" alt="Stephanie Portrait" />
+    </div>
+    {% endif %}
+    {% if adventurer == "louise-allen" %}
+    <div class="barkeepFrame">
+        <img src="{{ url_for('static', filename='images/Louise.jpg') }}" alt="Louise Portrait" />
+    </div>
+    {% endif %}
+    <div class="barkeepSpeechBox">
+        <p id="characterSpeech" class="barkeepSpeech">CHARACTERS SPEAK HERE</p>
+        <button id="continue" class="continueBtn" onclick="changeText()">
+            Continue <span class="btnArror">→</span>
+        </button>
+    </div>
+</div>
+
+<script type='module' src="{{ url_for('static', filename='../../static/js/speech/speech-controls.js')}}"></script>

@@ -12,11 +12,11 @@ def index():
 
 @app.route("/the-programming-dragon/welcome", methods=["POST", "GET"])
 def welcome():
-    return render_template("welcome.html")
+    return render_template("welcome.html",adventurer = "barkeep")
 
 @app.route("/the-programming-dragon/tavern")
 def tavern():
-    return render_template("tavern.html")
+    return render_template("tavern.html",adventurer = "barkeep")
 
 # Adventurer Pages
 @app.route("/the-programming-dragon/tavern/<adventurer>")
@@ -46,4 +46,4 @@ def sideQuests(adventurer):
 # Sending Stone
 @app.route("/the-programming-dragon/tavern/cast-sending-stone")
 def castSendingStone(adventurer):
-    return render_template("cast_sending_stone.html")
+    return render_template("cast_sending_stone.html", adventurer = "barkeep")

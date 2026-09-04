@@ -1,10 +1,13 @@
 {% extends "layout.html" %}
 {% block main %}
-<h1>Welcome to the Programming Dragon</h1>
 <div id="idCards">
-	{% include 'partials/intro_card.html'%}
+    {% include 'partials/intro_card.html'%}
 </div>
-<br />
-<p id="barkeepSpeech">Here are our resident “for-hires”. Feel free to speak with them.</p>
-<img src="{{ url_for('static', filename='images/MedievalMaiden.png') }}"/>
+{% include 'partials/character_speech.html'%}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        barKeepTavern()
+    });
+</script>
+<script type='module' src="{{ url_for('static', filename='../../static/js/speech/speech-controls.js')}}"></script>
 {% endblock %}

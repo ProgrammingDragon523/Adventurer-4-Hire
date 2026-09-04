@@ -1,9 +1,23 @@
+import { getJobDuration } from "../helpers/data-manipulation.js";
+import { buildHTMLListFromData } from "../helpers/html-builders.js";
 import stephanieData from "../../data/stephanie_resume.json" with { type: "json" };
 import louiseData from "../../data/louise_resume.json" with { type: "json" };
-import { getJobDuration } from "../helpers/dataManipulation.js";
-import { buildHTMLListFromData } from "../helpers/htmlBuilders.js";
+import { getAdventurer } from "../helpers/url-parsers.js";
+import { STEPHANIE } from "../helpers/constants.js";
 
-function loadData(pageData) {
+let page = 0
+
+function getWorkExperience(adventurer) {
+    let adventurerData = adventurer === STEPHANIE ? stephanieData.experience.jobs : louiseData.experience.jobs
+    return adventurerData[page]
+}
+
+export function loadWorkExperienceByPage() {
+    const currentUrl = window.location.href.split("/");
+    const adventurer = getAdventurer(currentUrl)
+
+    let pageData = getWorkExperience(adventurer)
+
     document.getElementById("jobTitle").innerText = pageData.title;
     document.getElementById("company").innerText = pageData.company_name;
 
@@ -21,21 +35,21 @@ function loadData(pageData) {
     }
 
     let skills = pageData.technical_env
-    if(skills.length === 0){
-        document.getElementById("technical_enviroment").style.display="none"
+    if (skills.length === 0) {
+        document.getElementById("technical_environment").style.display = "none"
     } else {
-        document.getElementById("technical_enviroment").style.display="block"
+        document.getElementById("technical_environment").style.display = "block"
         let skillsList = document.getElementById("skills")
         buildHTMLListFromData(skillsList, skills)
     }
-    
+
     document.getElementById("description").innerHTML = pageData.overview
 
     let highlights = pageData.highlights
-    if(highlights.length === 0){
-        document.getElementById("highlights_container").style.display="none"
+    if (highlights.length === 0) {
+        document.getElementById("highlights_container").style.display = "none"
     } else {
-        document.getElementById("highlights_container").style.display="block"
+        document.getElementById("highlights_container").style.display = "block"
         let highlightsList = document.getElementById("highlights")
         buildHTMLListFromData(highlightsList, highlights)
     }
@@ -54,21 +68,13 @@ function pageFlip(direction) {
     let lastPage = adventurerData[adventurer].length - 1
     page === lastPage ? forwardButton.style.display = "none" : forwardButton.style.display = "block"
 
-
-    pageData = adventurerData[adventurer][page]
-    loadData(pageData)
+    loadWorkExperienceByPage()
 }
 
+function loadPastAdventuresPage() {
+    document.getElementById("PageBackward").style.display = "none";
+    loadWorkExperienceByPage()
+}
+
+window.loadPastAdventuresPage = loadPastAdventuresPage
 window.pageFlip = pageFlip
-document.getElementById("PageBackward").style.display = "none";
-
-let page = 0
-let adventurerData = {
-    "stephanie-vaccaro": stephanieData.experience.jobs,
-    "louise-allen": louiseData.experience.jobs
-}
-const currentUrl = window.location.href.split("/");
-const adventurer = currentUrl[currentUrl.length - 2]
-
-let pageData = adventurerData[adventurer][page]
-loadData(pageData)

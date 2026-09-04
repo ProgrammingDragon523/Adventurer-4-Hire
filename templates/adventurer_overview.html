@@ -1,48 +1,41 @@
 {% extends "layout.html" %}
 {% block main %}
-
-<script type='text/javascript' src="{{ url_for('static', filename='../../static/js/functionality/adventurerButton.js')}}"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        loadInitialText("{{adventurer}}");
+        loadAdventurerLandingPage("{{adventurer}}");
     });
 </script>
 
-<h2 id="Narrator">Intro Text Here</h2>
-<div id="exploreButtons" hidden>
+<h2 id="narrator">Intro Text Here</h2>
+<div id="exploreButtons">
     <a href="{{ url_for('pastAdventures', adventurer=adventurer) }}" class="btn btn-primary">
-		Past Adventures (Job History)
-	</a>
+        Past Adventures (Job History)
+    </a>
     </br>
     <a href="{{ url_for('credentials', adventurer=adventurer) }}" class="btn btn-primary">
-		Credentials (Education)
-	</a>
+        Credentials (Education)
+    </a>
     </br>
     <a href="{{ url_for('sideQuests', adventurer=adventurer) }}" class="btn btn-primary">
-		Side Quests (Personal Projects)
-	</a>
+        Side Quests (Personal Projects)
+    </a>
     </br>
     <a href="{{ url_for('skillsAndPowers', adventurer=adventurer) }}" class="btn btn-primary">
-		Skills & Powers (Skills)
-	</a>
+        Skills & Powers (Skills)
+    </a>
     </br>
     <a href="{{ url_for('spellScrolls', adventurer=adventurer) }}" class="btn btn-primary">
-		Spell Scrolls (Publications)
-	</a>
+        Spell Scrolls (Publications)
+    </a>
 </div>
 </br>
 
 <!--Adventurer Speech Bubble-->
-{% if adventurer == "stephanie-vaccaro" %}
-<img src="{{ url_for('static', filename='images/Stephanie.jpg') }}"/>
-{% endif %}
-{% if adventurer == "louise-allen" %}
-<img src="{{ url_for('static', filename='images/Louise.jpg') }}"/>
-{% endif %}
-
-<p id="adventurerSpeech">Adventurer Speaks Here</p>
-<button id="continueAdventurerSpeech" onclick="changeText()">Continue</button>
+{% include 'partials/character_speech.html'%}
 
 <!--Adventurer Download File, Send Email, and Return to Tavern Links-->
 {% include 'partials/adventurer_footer.html'%}
+
+<script type='module'
+    src="{{ url_for('static', filename='../../static/js/pages/adventurer-landing-page.js')}}"></script>
 {% endblock %}

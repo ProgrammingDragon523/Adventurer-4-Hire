@@ -1,0 +1,12 @@
+<div id="adventurerSpeech">
+    {% if adventurer == STEPHANIE %}
+    <img src="{{ url_for('static', filename='images/Stephanie.jpg') }}" />
+    {% endif %}
+    {% if adventurer == LOUISE %}
+    <img src="{{ url_for('static', filename='images/Louise.jpg') }}" />
+    {% endif %}
+</div>
+
+<script type='text/javascript'
+    src="{{ url_for('static', filename='../../static/js/functionality/adventurer-landing-page.js')}}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='../../static/js/helpers/constants.js')}}"></script>
