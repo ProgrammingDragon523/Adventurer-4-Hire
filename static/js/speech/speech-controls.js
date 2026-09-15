@@ -26,7 +26,10 @@ function barKeepTavern() {
 }
 
 /* General Set Speech  */
-export function setSpeech(adventurer, page) {
+export function setSpeech() {
+    let adventurer = getAdventurer()
+    let page = getPage()
+    document.getElementById("continue").style.display = "none"
     if (page === "cast-sending-stone") {
         document.getElementById("characterSpeech").innerText = barkeep_speech.sendingStone
     } else if (page === "tavern") {
@@ -42,9 +45,7 @@ function changeText() {
     if (currentUrl.includes("welcome")) {
         barKeepIntro()
     } else {
-        let page = getPage(currentUrl)
-        let adventurer = getAdventurer(currentUrl)
-        setSpeech(adventurer, page)
+        setSpeech()
     }
 }
 

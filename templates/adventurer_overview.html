@@ -2,7 +2,7 @@
 {% block main %}
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        loadAdventurerLandingPage("{{adventurer}}");
+        loadAdventurerLandingPage();
     });
 </script>
 
@@ -29,9 +29,6 @@
     </a>
 </div>
 </br>
-
-<!--Adventurer Speech Bubble-->
-{% include 'partials/character_speech.html'%}
 
 <!--Adventurer Download File, Send Email, and Return to Tavern Links-->
 {% include 'partials/adventurer_footer.html'%}

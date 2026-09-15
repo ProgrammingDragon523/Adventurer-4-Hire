@@ -1,13 +1,12 @@
 {% extends "layout.html" %}
 {% block main %}
-<div id="idCards">
-    {% include 'partials/intro_card.html'%}
-</div>
-{% include 'partials/character_speech.html'%}
+<div id="introCards"></div>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+        loadTavernPage()
         barKeepTavern()
     });
 </script>
 <script type='module' src="{{ url_for('static', filename='../../static/js/speech/speech-controls.js')}}"></script>
+<script type='module' src="{{ url_for('static', filename='../../static/js/pages/tavern-page.js')}}"></script>
 {% endblock %}

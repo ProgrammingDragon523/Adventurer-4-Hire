@@ -1,6 +1,7 @@
 import { LOUISE, STEPHANIE } from "./constants.js"
 
-export function getPage(currentUrl) {
+export function getPage() {
+    const currentUrl = window.location.href.split("/");
     if (currentUrl.includes("past-adventures")) {
         return "pastAdventures"
     }
@@ -22,7 +23,8 @@ export function getPage(currentUrl) {
     return "tavern"
 }
 
-export function getAdventurer(currentUrl) {
+export function getAdventurer() {
+    const currentUrl = window.location.href.split("/");
     if (currentUrl.includes(STEPHANIE)) return STEPHANIE;
     if (currentUrl.includes(LOUISE)) return LOUISE;
     return "barkeep";

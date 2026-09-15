@@ -7,26 +7,29 @@
 </script>
 {% include 'partials/side_nav.html'%}
 
+{% include 'partials/page_title.html' %}
 <!-- Job Page -->
-<h1 id="jobTitle">Job Title</h1>
-<h1 id="company">Company Name</h1>
-<h2 id="dates">Start-End</h2>
-<h2 id="years">Years</h2>
-<div id="technical_environment">
-    <h2>Technical Environment</h2>
+<h2 id="jobTitle">Job Title</h1>
+<h2 id="company">Company Name</h1>
+<h3 id="location">Location</h3>
+<h3 id="dates">Start-End</h2>
+<h3 id="years">Years</h2>
+<div id="technicalEnvironment">
+    <h3>Technical Environment</h2>
     <ul id="skills"></ul>
 </div>
-<h2 id="description">Description</h2>
-<div id="highlights_container">
+<h3 id="description">Description</h2>
+<div id="highlightsContainer">
     <h2>Highlights</h2>
     <ul id="highlights"></ul>
 </div>
 <div id="pageButtons">
-    <button id="PageBackward" onclick="pageFlip(-1)" hidden>ARROW BACKWARD</button>
-    <button id="PageForward" onclick="pageFlip(1)">ARROW FORWARD</button>
+    <button id="pageBackward" onclick="pageFlip(-1)" hidden>ARROW BACKWARD</button>
+    <button id="pageForward" onclick="pageFlip(1)">ARROW FORWARD</button>
 </div>
 
-{% include 'partials/character_speech.html'}
+<!--Adventurer Download File, Send Email, and Return to Tavern Links-->
 {% include 'partials/adventurer_footer.html'%}
+
 <script type='module' src="{{ url_for('static', filename='../../static/js/pages/past-adventures-page.js')}}"></script>
 {% endblock %}

@@ -20,17 +20,23 @@
         "dnd_title": "The Code Tinker",
         "job_style": "Full Stack Developer"
     },
-    "education": {
+    "education": [{
         "school": "Illinois Institute of Technology",
+        "highest_degree": "Master of Science in Computer Science",
         "degrees": [
+            {
+                "degree": "Master of Science in Computer Science",
+                "grad_year": "May 2019",
+                "honors": "",
+                "program": "Computer Science Co-terminal Program",
+                "about_program": "A degree program that allowed students to earn their Bachalor’s and Master’s at the same time"
+            },
             {
                 "degree": "Bachelor of Science in Computer Science",
                 "grad_year": "May 2019",
-                "honors": "Cum Laude"
-            },
-            {
-                "degree": "Master of Science in Computer Science",
-                "grad_year": "May 2019"
+                "honors": "Cum Laude",
+                "program": "Computer Science Co-terminal Program",
+                "about_program": "A degree program that allowed students to earn their Bachalor’s and Master’s at the same time"
             }
         ],
         "organizations": [
@@ -54,8 +60,8 @@
                     }
                 ]
             }
-        ]
-    },
+        ]}
+    ],
     "experience": {
         "first_professional_job_start": "October 2019",
         "jobs": [

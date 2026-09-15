@@ -1,9 +1,10 @@
 import { getJobDuration } from "../helpers/data-manipulation.js";
-import { buildHTMLListFromData } from "../helpers/html-builders.js";
+import { buildHTMLListFromData, setPageTitle } from "../helpers/html-builders.js";
 import stephanieData from "../../data/stephanie_resume.json" with { type: "json" };
 import louiseData from "../../data/louise_resume.json" with { type: "json" };
 import { getAdventurer } from "../helpers/url-parsers.js";
 import { STEPHANIE } from "../helpers/constants.js";
+import { setSpeech } from "../speech/speech-controls.js";
 
 let page = 0
 
@@ -13,66 +14,69 @@ function getWorkExperience(adventurer) {
 }
 
 export function loadWorkExperienceByPage() {
-    const currentUrl = window.location.href.split("/");
-    const adventurer = getAdventurer(currentUrl)
+    const adventurer = getAdventurer()
 
     let pageData = getWorkExperience(adventurer)
 
     document.getElementById("jobTitle").innerText = pageData.title;
     document.getElementById("company").innerText = pageData.company_name;
+    document.getElementById("location").innerText = pageData.location;
 
     let endDate = pageData.current ? `${new Date().toLocaleString('default', { month: 'long' })} ${new Date().getFullYear()}` : pageData.ended
 
     let endText = pageData.current ? "Present" : endDate
 
-    document.getElementById("dates").innerHTML = `${pageData.started} - ${endText}`
+    document.getElementById("dates").innerText = `${pageData.started} - ${endText}`
 
     let jobDuration = getJobDuration(pageData.started, endDate)
     if (jobDuration.monthExp > 0) {
-        document.getElementById("years").innerHTML = `${jobDuration.yearsExp} years ${jobDuration.monthExp} months`
+        document.getElementById("years").innerText = `${jobDuration.yearsExp} years ${jobDuration.monthExp} months`
     } else {
-        document.getElementById("years").innerHTML = `${jobDuration.yearsExp} years`
+        document.getElementById("years").innerText = `${jobDuration.yearsExp} years`
     }
 
     let skills = pageData.technical_env
     if (skills.length === 0) {
-        document.getElementById("technical_environment").style.display = "none"
+        document.getElementById("technicalEnvironment").style.display = "none"
     } else {
-        document.getElementById("technical_environment").style.display = "block"
+        document.getElementById("technicalEnvironment").style.display = "block"
         let skillsList = document.getElementById("skills")
         buildHTMLListFromData(skillsList, skills)
     }
 
-    document.getElementById("description").innerHTML = pageData.overview
+    document.getElementById("description").innerText = pageData.overview
 
     let highlights = pageData.highlights
     if (highlights.length === 0) {
-        document.getElementById("highlights_container").style.display = "none"
+        document.getElementById("highlightsContainer").style.display = "none"
     } else {
-        document.getElementById("highlights_container").style.display = "block"
+        document.getElementById("highlightsContainer").style.display = "block"
         let highlightsList = document.getElementById("highlights")
         buildHTMLListFromData(highlightsList, highlights)
     }
 }
 
 function pageFlip(direction) {
-    let forwardButton = document.getElementById("PageForward")
-    let backButton = document.getElementById("PageBackward")
+    let forwardButton = document.getElementById("pageForward")
+    let backButton = document.getElementById("pageBackward")
 
     direction === 1 ? page++ : page--
 
     let firstPage = 0
     page === firstPage ? backButton.style.display = "none" : backButton.style.display = "block"
 
+    const adventurer = getAdventurer()
+    let lastPage = adventurer === STEPHANIE ? stephanieData.experience.jobs.length - 1 : louiseData.experience.jobs.length - 1
 
-    let lastPage = adventurerData[adventurer].length - 1
     page === lastPage ? forwardButton.style.display = "none" : forwardButton.style.display = "block"
 
     loadWorkExperienceByPage()
 }
 
 function loadPastAdventuresPage() {
-    document.getElementById("PageBackward").style.display = "none";
+    document.getElementById("pageBackward").style.display = "none";
+    setPageTitle()
+    setSpeech()
     loadWorkExperienceByPage()
 }
 

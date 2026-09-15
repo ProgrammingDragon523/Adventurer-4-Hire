@@ -1,7 +1,8 @@
 import { stephanie_speech, louise_speech, narrator_speech } from "../speech/speech-text.js";
-import { STEPHANIE, LOUISE } from "../helpers/constants.js";
+import { getAdventurer } from "../helpers/url-parsers.js";
+import { STEPHANIE } from "../helpers/constants.js";
 
-function loadAdventurerLandingPage(adventurer) {
+function loadAdventurerLandingPage() {
     let visited = []
     let firstVisit = false;
     document.getElementById("exploreButtons").style.display = "none"
@@ -10,6 +11,8 @@ function loadAdventurerLandingPage(adventurer) {
     if (sessionStorage.getItem("visited") !== null) {
         visited = JSON.parse(sessionStorage.getItem("visited"));
     }
+
+    const adventurer = getAdventurer()
 
     // If we haven't visited before...
     if (!visited.includes(adventurer)) {
