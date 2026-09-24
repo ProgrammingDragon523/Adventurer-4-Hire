@@ -1,31 +1,31 @@
-import { LOUISE, STEPHANIE } from "./constants.js"
+import { LOUISE, STEPHANIE } from "./constants.js";
 
 export function getPage() {
-    const currentUrl = window.location.href.split("/");
-    if (currentUrl.includes("past-adventures")) {
-        return "pastAdventures"
-    }
-    if (currentUrl.includes("skills-and-powers")) {
-        return "skillsAndPowers"
-    }
-    if (currentUrl.includes("credentials")) {
-        return "credentials"
-    }
-    if (currentUrl.includes("spell-scrolls")) {
-        return "spellScrolls"
-    }
-    if (currentUrl.includes("side-quests")) {
-        return "sideQuests"
-    }
-    if (currentUrl.includes("cast-sending-stone")) {
-        return "sendingStone"
-    }
-    return "tavern"
+  const currentUrl = window.location.href.split("/");
+  if (currentUrl.includes("past-adventures")) {
+    return "pastAdventures";
+  }
+  if (currentUrl.includes("skills-and-powers")) {
+    return "skillsAndPowers";
+  }
+  if (currentUrl.includes("credentials")) {
+    return "credentials";
+  }
+  if (currentUrl.includes("spell-scrolls")) {
+    return "spellScrolls";
+  }
+  if (currentUrl.includes("side-quests")) {
+    return "sideQuests";
+  }
+  if (currentUrl.includes("cast-sending-stone")) {
+    return "sendingStone";
+  }
+  return "tavern";
 }
 
 export function getAdventurer() {
-    const currentUrl = window.location.href.split("/");
-    if (currentUrl.includes(STEPHANIE)) return STEPHANIE;
-    if (currentUrl.includes(LOUISE)) return LOUISE;
-    return "barkeep";
+  const currentUrl = window.location.href.split("/");
+  if (currentUrl.includes(STEPHANIE)) return STEPHANIE;
+  if (currentUrl.includes(LOUISE)) return LOUISE;
+  return "barkeep";
 }

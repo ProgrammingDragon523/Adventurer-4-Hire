@@ -1,97 +1,103 @@
 {
-    "personal_info": {
-        "name": {
-            "first": "Louise",
-            "middle": "Claire",
-            "last": "Allen"
-        },
-        "address": {
-            "street": "47 Ulyett Place",
-            "district": "Oldbrook",
-            "city": "Milton Keynes",
-            "zip": "MK6 2NZ",
-            "country": "United Kingdom"
-        },
-        "phone_numbers": {
-            "home": "07794549682",
-            "cell": "07794549682"
-        },
-        "email": "louise.allen81@gmail.com",
-        "dnd_title": "The Frontend Wizard",
-        "job_style": "Fullstack Website Developer"
+  "personal_info": {
+    "name": {
+      "first": "Louise",
+      "middle": "Claire",
+      "last": "Allen"
     },
-    "education": [{
-        "school": "It Career Switch/CodeCademy",
-        "program": "<INFO HERE>",
-        "about_program": "<INFO HERE>",
-        "highest_degree": "<INFO HERE>",
-        "degrees": [
+    "address": {
+      "street": "47 Ulyett Place",
+      "district": "Oldbrook",
+      "city": "Milton Keynes",
+      "zip": "MK6 2NZ",
+      "country": "United Kingdom"
+    },
+    "phone_numbers": {
+      "home": "07794549682",
+      "cell": "07794549682"
+    },
+    "email": "louise.allen81@gmail.com",
+    "dnd_title": "The Frontend Wizard",
+    "job_style": "Fullstack Website Developer"
+  },
+  "education": [
+    {
+      "school": "It Career Switch/CodeCademy",
+      "program": "<INFO HERE>",
+      "about_program": "<INFO HERE>",
+      "highest_degree": "<INFO HERE>",
+      "degrees": [
+        {
+          "degree": "<INFO HERE>",
+          "grad_year": "<INFO HERE>",
+          "honors": "<INFO HERE>",
+          "program": "<INFO HERE>",
+          "about_program": "<INFO HERE>"
+        }
+      ],
+      "organizations": [
+        {
+          "org_name": "<INFO HERE>",
+          "titles": [
             {
-                "degree": "<INFO HERE>",
-                "grad_year": "<INFO HERE>",
-                "honors": "<INFO HERE>",
-                "program": "<INFO HERE>",
-                "about_program": "<INFO HERE>"
+              "title": "<INFO HERE>",
+              "start": "<INFO HERE>",
+              "end": "<INFO HERE>"
             }
+          ]
+        }
+      ]
+    }
+  ],
+  "experience": {
+    "first_professional_job_start": "<INFO HERE>",
+    "jobs": [
+      {
+        "company_name": "<INFO HERE>",
+        "title": "<INFO HERE>",
+        "location": "<INFO HERE>",
+        "started": "<INFO HERE>",
+        "ended": "",
+        "current": true,
+        "technical_env": [
+          "<INFO HERE>"
         ],
-        "organizations": [
-            {
-                "org_name": "<INFO HERE>",
-                "titles": [
-                    {
-                        "title": "<INFO HERE>",
-                        "start": "<INFO HERE>",
-                        "end": "<INFO HERE>"
-                    }
-                ]
-            }
+        "overview": "<INFO HERE>",
+        "highlights": [
+          "<INFO HERE>"
         ]
-    }],
-    "experience": {
-        "first_professional_job_start": "<INFO HERE>",
-        "jobs": [
-            {
-                "company_name": "<INFO HERE>",
-                "title": "<INFO HERE>",
-                "location": "<INFO HERE>",
-                "started": "<INFO HERE>",
-                "ended": "",
-                "current": true,
-                "technical_env": ["<INFO HERE>"],
-                "overview": "<INFO HERE>",
-                "highlights": ["<INFO HERE>"]
-            }
-        ]
-    },
-    "publications": [
-        {
-            "title": "The Lucky Penny",
-            "publication_date": "April 3, 2024",
-            "contributors": [
-                "Louise Allen"
-            ],
-            "description": "A self published post-apocalyptic novel.\\nPenny never thought she’d have family. Penny lost family when Penny little. Penny scared when taken away from home. Penny stay quiet. Penny lost, Penny found. Now Penny have new family. Penny brave. Penny tell her story.\\nJulietta Milard’s life had been rather mundane up until a few years ago when she found herself in the small town of Waterwealt. Though she had intended to move on to bigger and better things, a beautiful museum preserved in time had her sprouting roots rather than traversing the Wastes further.\\nHaving helped the sleepy town with its various mechanical-based problems, Julietta thought found herself in a smooth routine. That was until the universe decided to throw a curveball her way when about two cycles later a small girl shows up at her doorstep, sick, injured, and unable to speak with only a penny necklace as any identification.\\nNearly a cycle and a half later, the young girl, whom Julietta named Penny, has recovered but remains mute despite her best efforts. On top of taking care of little Penny, restoring the museum, and trying to find a solution for the now increasingly weakening water pressure in town, Julietta is faced with another issue. A stranger has come to town, a ‘doctor’ named Charles Hawthorne, who seems to think the Arcane is real. Brushing him off, she finds herself questioning what the world is coming to. That is until the world as she knows it to come crashing down around her and vanishes in a cloud of dust.",
-            "links": [
-                "https://www.amazon.com/Lucky-Penny-Stephanie-Vaccaro/dp/B0D186MM18",
-                "https://www.goodreads.com/book/show/210845409-the-lucky-penny"
-            ]
-        }
-    ],
-    "projects": [
-        {
-            "title": "Proof of Concept Machine Learning Data Retrieval System",
-            "contributors": [
-                "Louise Allen"
-            ],
-            "start": "August 2021",
-            "end": "July 2022",
-            "description": "Designed and programmed a machine learning based data retrieval system using SWI-Prolog as a proof of concept based on a fictional program called D3B.dsk from a YouTube mystery series called Project 863.\\nAs an experiment, I attempted to recreate a more simplistic version of D3b.dsk using a 1987 open-source machine learning-style programming language known as Swi-Prolog. Using this language, I have developed a program called ST3PH.dsk.\\nOriginally, I spent a couple of weeks researching and programming to create standalone runnable programs for Windows and Linux. I eventually rewrote the entire thing in Python and deployed it on Heroku.Its base functionality allowed the user to navigate \"directories\" and enter an event name, year, month & year, full date, or up to two key terms for cross-referencing to retrieve events on the timeline created for the show in those directories. It has three knowledge bases that can be individually or all searched at once. The CSVs (standalone) and Database (web app) for these were  updated as more information from the show is released.\\nIt was decommissioned when the series ended, but its code remains available on GitHub (Web App) and MediaFire (Standalone)",
-            "links": [
-                "https://github.com/ProgrammingDragon523/st3ph.dsk",
-                "https://www.mediafire.com/file/1yzkyiyse139f3n/ST3PH_WIN.zip/file",
-                "https://www.mediafire.com/file/wj0dtmq4iaxdsnl/ST3PH_LINUX.zip/file",
-                "https://www.mediafire.com/file/t5ql3fc81vqe6j5/Knowledge_Bases.zip/file"
-            ]
-        }
+      }
     ]
+  },
+  "publications": [
+    {
+      "title": "The Lucky Penny",
+      "publication_date": "April 3, 2024",
+      "contributors": [
+        "Louise Allen"
+      ],
+      "description": "A self published post-apocalyptic novel.\\nPenny never thought she’d have family. Penny lost family when Penny little. Penny scared when taken away from home. Penny stay quiet. Penny lost, Penny found. Now Penny have new family. Penny brave. Penny tell her story.\\nJulietta Milard’s life had been rather mundane up until a few years ago when she found herself in the small town of Waterwealt. Though she had intended to move on to bigger and better things, a beautiful museum preserved in time had her sprouting roots rather than traversing the Wastes further.\\nHaving helped the sleepy town with its various mechanical-based problems, Julietta thought found herself in a smooth routine. That was until the universe decided to throw a curveball her way when about two cycles later a small girl shows up at her doorstep, sick, injured, and unable to speak with only a penny necklace as any identification.\\nNearly a cycle and a half later, the young girl, whom Julietta named Penny, has recovered but remains mute despite her best efforts. On top of taking care of little Penny, restoring the museum, and trying to find a solution for the now increasingly weakening water pressure in town, Julietta is faced with another issue. A stranger has come to town, a ‘doctor’ named Charles Hawthorne, who seems to think the Arcane is real. Brushing him off, she finds herself questioning what the world is coming to. That is until the world as she knows it to come crashing down around her and vanishes in a cloud of dust.",
+      "links": [
+        "https://www.amazon.com/Lucky-Penny-Stephanie-Vaccaro/dp/B0D186MM18",
+        "https://www.goodreads.com/book/show/210845409-the-lucky-penny"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Proof of Concept Machine Learning Data Retrieval System",
+      "contributors": [
+        "Louise Allen"
+      ],
+      "start": "August 2021",
+      "end": "July 2022",
+      "description": "Designed and programmed a machine learning based data retrieval system using SWI-Prolog as a proof of concept based on a fictional program called D3B.dsk from a YouTube mystery series called Project 863.\\nAs an experiment, I attempted to recreate a more simplistic version of D3b.dsk using a 1987 open-source machine learning-style programming language known as Swi-Prolog. Using this language, I have developed a program called ST3PH.dsk.\\nOriginally, I spent a couple of weeks researching and programming to create standalone runnable programs for Windows and Linux. I eventually rewrote the entire thing in Python and deployed it on Heroku.Its base functionality allowed the user to navigate \"directories\" and enter an event name, year, month & year, full date, or up to two key terms for cross-referencing to retrieve events on the timeline created for the show in those directories. It has three knowledge bases that can be individually or all searched at once. The CSVs (standalone) and Database (web app) for these were  updated as more information from the show is released.\\nIt was decommissioned when the series ended, but its code remains available on GitHub (Web App) and MediaFire (Standalone)",
+      "links": [
+        "https://github.com/ProgrammingDragon523/st3ph.dsk",
+        "https://www.mediafire.com/file/1yzkyiyse139f3n/ST3PH_WIN.zip/file",
+        "https://www.mediafire.com/file/wj0dtmq4iaxdsnl/ST3PH_LINUX.zip/file",
+        "https://www.mediafire.com/file/t5ql3fc81vqe6j5/Knowledge_Bases.zip/file"
+      ]
+    }
+  ]
 }
